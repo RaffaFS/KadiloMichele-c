@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    font-family: "Poiret One", serif;
 }
 
 .container{
@@ -17,7 +18,6 @@
         position: relative;
 
         &::before{
-            
             background-image: linear-gradient(0deg, #000, transparent);
             content: '';
             inset: 0;
@@ -31,8 +31,8 @@
             img{
                 position: absolute;
                 width: 16vw;
-                border: #e0cf82 solid 1px;
-                box-shadow: #c49139 0 0 4px;
+                border: #c2a870 solid 1px;
+                box-shadow: #80673e 0 0 4px;
                 border-radius: 40%;
                 top: 32vh;
                 left: 50%;
@@ -52,7 +52,7 @@
             height: 68vh;
             margin: 0 auto;
             text-align: center;
-            padding-top: 18vh;
+            padding-top: 24vh;
             padding-bottom: 8vh;
             display: flex;
             flex-direction: column;
@@ -68,13 +68,18 @@
             }
         
             .titles{
+                margin: 0 auto;
                 z-index: 1;
+                
                 .title{
+                    font-size: 32px;
                     margin-bottom: 8px;
+                    letter-spacing: 6px;
                 }
 
                 .subtitle{
-                    
+                    font-size: 24px;
+                    font-weight: 400;
                 }
             }
 
@@ -87,11 +92,14 @@
 
                 .icon_box{
                     .icon{
-                        max-width: 64px;    
+                        max-width: 56px;    
                     }
                 }
             }
             p{
+                letter-spacing: 2px;
+                margin: 0 auto;
+                font-size: 20px;
                 z-index: 1;
             }
         }

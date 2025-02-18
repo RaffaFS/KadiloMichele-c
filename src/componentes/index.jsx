@@ -28,7 +28,7 @@ export default() => {
                 <div className={styles.infosBG}>
                     <div className={styles.infos}>
                         <div className={styles.titles}>
-                            <h1 className={styles.title}>Kadilo e Michele</h1>
+                            <h1 className={styles.title}>KADILO E MICHELE</h1>
                             <h2 className={styles.subtitle}>Mais de 25 anos de experiência</h2>
                         </div>
                         <div className={styles.icons}>
@@ -45,7 +45,7 @@ export default() => {
                                 <img className={styles.icon} src={local} alt="local" />
                             </a>
                         </div>
-                        <p className={styles.text}>Venha realizar seu sonho com quem entende de cabelos</p>
+                        <p className={styles.text}>Venha realizar seu sonho com <br /> quem entende de cabelos!</p>
                     </div>
                 </div>
             </div>
