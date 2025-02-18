@@ -25,10 +25,10 @@ export default() => {
                     <div className={styles.avatarContainer}>
                         <div className={styles.avatar}>
                             <div className={styles.img_box}>
-                                <img className={styles.logo} src={logoIMG} onClick={alteraAvatar} alt="logo" />
+                                <img  src={qrIMG} onClick={alteraAvatar} alt="qr code" />
                             </div>
                             <div className={styles.img_box}>
-                                <img className={`${styles.qr} ${avatar ? styles.hidden : '' }`} src={qrIMG} onClick={alteraAvatar} alt="qr code" />
+                                <img className={`${styles.logo} ${avatar ? '' : styles.hidden}`} src={logoIMG} onClick={alteraAvatar} alt="logo" />
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default() => {
                             <h2 className={styles.subtitle}>Mais de 25 anos de experiência</h2>
                         </div>
                         <div className={styles.icons}>
-                            <a target="_blank" href="https://wa.me/49999559282?text=Olá,%20gostaria%20de%20esclarecer%20algumas%20dúvidas." className={styles.icon_box}>
+                            <a target="_blank" href="https://wa.me/49999559282?text=Olá,%20Michele,%20gostaria%20de%20marcar%20um%20horário%20contigo!" className={styles.icon_box}>
                                 <img className={styles.icon} src={whatsapp} alt="whatsapp" />
                             </a>
                             <a target="_blank" href="https://www.instagram.com/kadiloemichele/" className={styles.icon_box}>

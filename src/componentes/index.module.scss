@@ -26,25 +26,36 @@
 
         .avatar{
             position: relative;
-            width: 16vw;
-            height: 16vw;
-            
+            width: 20vw;
+            height: 20vw;
             border-radius: 50%;
             top: 32vh;
             left: 50%;
             z-index: 1;
             transform: translate(-50%, -50%);
 
+            @media(max-width: 1024px){
+                width: 32vh;
+                height: 32vh;
+            }
+
             .img_box{
                 position: absolute;
 
                 img{
-                    max-width: 16vw;
+                    max-width: 20vw;
                     border-radius: 50%;
                     border: #c2a870 solid 1px;
                     box-shadow: #80673e 0 0 8px;
-                    transition: all ease 1s;
                     overflow: hidden;
+                    transition: all ease-in-out 1s;
+
+                    @media(max-width: 1024px){
+                        max-width: 32vh;
+                    }
+                    @media(max-width: 768px){
+                        transition: all ease-in-out .3s;
+                    }
                 }
             }
         }
@@ -57,6 +68,10 @@
         background-size: cover;
         height: 68vh;
 
+        @media(max-width: 768px){
+            background-image: url(../img/luxury2.jpg);
+        }
+
         .infos{
             height: 68vh;
             margin: 0 auto;
@@ -67,6 +82,11 @@
             flex-direction: column;
             justify-content: space-around;
             position: relative;
+            
+            @media(max-width: 1024px){
+                padding-left: 16px;
+                padding-right: 16px;
+            }
 
             &::before{
                 background-color: #0009;
@@ -82,23 +102,53 @@
                 z-index: 1;
                 
                 .title{
-                    font-size: 32px;
+                    font-size: 56px;
                     margin-bottom: 8px;
-                    letter-spacing: 6px;
+                    letter-spacing: 12px;
+
+                    @media(max-width: 2559px){
+                        font-size: 28px;
+                        letter-spacing: 6px;
+                    }
+                    @media(max-width: 1024px) and (min-height: 1024px){
+                        font-size: 56px;
+                        letter-spacing: 4px;
+                    }   
+                    @media(max-width: 768px){
+                        font-size: 24px;
+                        letter-spacing: 4px;
+                    }   
                 }
 
                 .subtitle{
-                    font-size: 24px;
+                    font-size: 40px;
                     font-weight: 400;
+
+                    @media(max-width: 2559px){
+                        font-size: 20px;
+                    }
+                    @media(max-width: 1024px) and (min-height: 1024px){
+                        font-size: 32px;
+                    }
+                    @media(max-width: 768px){
+                        font-size: 16px;
+                    }
                 }
             }
 
             .icons{
                 z-index: 1;
                 display: flex;
-                max-width: 480px;
+                max-width: 1080px;
                 margin: 0 auto;
-                gap: 2vw;
+                gap: 2vw; 
+
+                @media(max-width: 1024px) and (min-height: 1024px){
+                    gap: 4vh;
+                }
+                @media(max-width: 768px){
+                    gap: 4vh;
+                }
 
                 .icon_box{
                     box-shadow: #fff 0 0 2px;
@@ -112,23 +162,49 @@
                     }
 
                     .icon{
-                        max-width: 56px;
+                        max-width: 160px;
+
+                        @media(max-width:2559px){
+                            max-width: 48px;
+                        }
+                        @media(max-width: 1024px) and (min-height: 1024px){
+                            max-width: 80px;
+                        }
+                        @media(max-width: 768px){
+                            max-width: 40px;
+                        }
                     }
                 }
             }
             p{
-                letter-spacing: 2px;
+                letter-spacing: 8px;
                 margin: 0 auto;
-                font-size: 20px;
+                font-size: 32px;
                 text-shadow: #fff 0 0 2px;
                 z-index: 1;
+
+                @media(max-width:2559px){
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                }
+                @media(max-width: 1024px) and (min-height: 1024px){
+                    font-size: 28px;
+                    letter-spacing: 4px;
+                }
+                @media(max-width: 768px){
+                    font-size: 16px;
+                }
             }
         }
     }
 
     .hidden{
         opacity: 0;
-        transform: scale(.8);
-        transition: all ease 1s;
+        transform: scale(1.1);
+        transition: all ease-in-out 1s;
+
+        @media(max-width: 768px){
+            transition: all ease-in-out .3s;
+        }
     }
 }
