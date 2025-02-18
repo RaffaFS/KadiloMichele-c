@@ -3,7 +3,7 @@ import { useState } from "react"
 import styles from "./index.module.scss"
 
 import logoIMG from "../img/logo.jpg"
-import qrIMG from "../img/qr.png"
+import qrIMG from "../img/qr.jpg"
 
 import whatsapp from "../img/svg/whatsapp.svg"
 import instagram from "../img/svg/instagram.svg"
@@ -14,14 +14,22 @@ export default() => {
     
     const [avatar, setAvatar] = useState(true)
 
+    function alteraAvatar(){
+        setAvatar(!avatar)
+    }
+
     return(
         <>
             <div className={styles.container}>
                 <div className={styles.hero}>
                     <div className={styles.avatarContainer}>
                         <div className={styles.avatar}>
-                            <img className={`${styles.logo} ${avatar ? '' : styles.hidden}`} src={logoIMG} alt="logo" />
-                            <img className={`${styles.logo} ${avatar ? styles.hidden : '' }`} src={qrIMG} alt="qr code" />
+                            <div className={styles.img_box}>
+                                <img className={styles.logo} src={logoIMG} onClick={alteraAvatar} alt="logo" />
+                            </div>
+                            <div className={styles.img_box}>
+                                <img className={`${styles.qr} ${avatar ? styles.hidden : '' }`} src={qrIMG} onClick={alteraAvatar} alt="qr code" />
+                            </div>
                         </div>
                     </div>
                 </div>
