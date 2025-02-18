@@ -87,6 +87,9 @@
                 padding-left: 16px;
                 padding-right: 16px;
             }
+            @media(max-width: 768px){
+                padding: 20vh 16px 12vh;
+            }
 
             &::before{
                 background-color: #0009;

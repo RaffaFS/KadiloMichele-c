@@ -5,10 +5,10 @@ import styles from "./index.module.scss"
 import logoIMG from "../img/logo.jpg"
 import qrIMG from "../img/qr.jpg"
 
-import whatsapp from "../img/svg/whatsapp.svg"
-import instagram from "../img/svg/instagram.svg"
-import facebook from "../img/svg/facebook.svg"
-import local from "../img/svg/local.svg"
+import whatsapp from "../img/svg/whatsapp.png"
+import instagram from "../img/svg/instagram.png"
+import facebook from "../img/svg/facebook.png"
+import local from "../img/svg/local.png"
 
 export default() => {
     
