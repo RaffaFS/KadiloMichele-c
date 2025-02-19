@@ -18,6 +18,10 @@
         height: 32vh;
         position: relative;
 
+        @media(max-width: 768px){
+            height: 28vh;
+        }
+
         &::before{
             background-image: linear-gradient(0deg, #000, transparent);
             content: '';
@@ -38,6 +42,10 @@
             @media(max-width: 1024px){
                 width: 32vh;
                 height: 32vh;
+            }
+
+            @media(max-width: 768px){
+                top: 28vh;
             }
 
             .img_box{
@@ -71,6 +79,7 @@
 
         @media(max-width: 768px){
             background-image: url(../img/luxury2.jpg);
+            height: 72vh;
         }
 
         .infos{
@@ -89,7 +98,8 @@
                 padding-right: 16px;
             }
             @media(max-width: 768px){
-                padding: 20vh 16px 12vh;
+                height: 72vh;
+                padding-bottom: 12vh;
             }
 
             &::before{
