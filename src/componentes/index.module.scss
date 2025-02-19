@@ -19,7 +19,7 @@
         position: relative;
 
         @media(max-width: 768px){
-            height: 28vh;
+            height: 24vh;
         }
 
         &::before{
@@ -45,7 +45,7 @@
             }
 
             @media(max-width: 768px){
-                top: 28vh;
+                top: 24vh;
             }
 
             .img_box{
@@ -79,7 +79,7 @@
 
         @media(max-width: 768px){
             background-image: url(../img/luxury2.jpg);
-            height: 72vh;
+            height: 76vh;
         }
 
         .infos{
@@ -98,8 +98,8 @@
                 padding-right: 16px;
             }
             @media(max-width: 768px){
-                height: 72vh;
-                padding-bottom: 12vh;
+                height: 76vh;
+                padding-bottom: 16vh;
             }
 
             &::before{
